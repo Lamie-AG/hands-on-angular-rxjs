@@ -1,5 +1,13 @@
 <h1>Angular RxJS Examples</h1>
 
+<p>
+  In Angular it is common to not use Promises for asynchronous tasks. Instead we use Rxjs with its Oberservables and Subscriptions.
+  <br>
+  Oberservables can be portrayed as streams emitting elements or errors until completion. An Observable is not just executed at its declaration. Instead it is only executed when it is subscribed to.
+  <br>
+  Note that we always should unsubscribe to all subscriptions otherwise memory leaks can occur. 
+</p>
+
 <h3>Even Numbers</h3> 
 <ul>
   <li *ngFor="let n of evenNumbers">
